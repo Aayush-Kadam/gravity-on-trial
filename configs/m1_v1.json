@@ -1,0 +1,137 @@
+{
+  "version": "m1-v1",
+  "scope": "M1 only; no all-catalog fitting",
+  "galaxies": [
+    "NGC3198",
+    "NGC2403",
+    "NGC3741",
+    "DDO154",
+    "NGC2841",
+    "UGC00731",
+    "NGC4157",
+    "F567-2"
+  ],
+  "additional_selection": [
+    {
+      "criterion": "largest_catalog_MHI_to_L36",
+      "catalog": {
+        "D": 12.5,
+        "ID": "UGC00731",
+        "Inc": 57.0,
+        "L36": 0.323,
+        "MHI": 1.807,
+        "Q": 1,
+        "RHI": 11.57,
+        "Rdisk": 2.3,
+        "Ref": "Sw09,Sw02",
+        "Reff": 1.4,
+        "SBdisk": 82.57,
+        "SBeff": 25.63,
+        "T": 10,
+        "Vflat_source": 73.3,
+        "e_D": 3.75,
+        "e_Inc": 3.0,
+        "e_L36": 0.019,
+        "e_Vflat_source": 2.3,
+        "f_D": 1
+      }
+    },
+    {
+      "criterion": "largest_catalog_disk_surface_brightness",
+      "catalog": {
+        "D": 18.0,
+        "ID": "NGC4157",
+        "Inc": 82.0,
+        "L36": 105.62,
+        "MHI": 8.226,
+        "Q": 1,
+        "RHI": 24.09,
+        "Rdisk": 2.32,
+        "Ref": "VS01,SV98",
+        "Reff": 4.44,
+        "SBdisk": 23813.87,
+        "SBeff": 848.85,
+        "T": 3,
+        "Vflat_source": 184.7,
+        "e_D": 2.5,
+        "e_Inc": 3.0,
+        "e_L36": 0.486,
+        "e_Vflat_source": 7.2,
+        "f_D": 4
+      }
+    },
+    {
+      "criterion": "lowest_inclination_Q3",
+      "catalog": {
+        "D": 79.0,
+        "ID": "F567-2",
+        "Inc": 20.0,
+        "L36": 2.134,
+        "MHI": 2.449,
+        "Q": 3,
+        "RHI": 14.94,
+        "Rdisk": 3.08,
+        "Ref": "dB97,dB96",
+        "Reff": 5.43,
+        "SBdisk": 46.65,
+        "SBeff": 11.5,
+        "T": 9,
+        "Vflat_source": 0.0,
+        "e_D": 11.8,
+        "e_Inc": 10.0,
+        "e_L36": 0.305,
+        "e_Vflat_source": 0.0,
+        "f_D": 1
+      }
+    }
+  ],
+  "models": [
+    "baryons",
+    "nfw",
+    "burkert",
+    "rar"
+  ],
+  "configurations": [
+    "F0_MLE",
+    "F1_MAP"
+  ],
+  "seed": 20261102,
+  "upsilon_disk": 0.5,
+  "upsilon_bulge": 0.7,
+  "a0_m_s2": 1.2e-10,
+  "ML_prior_dex_sigma": 0.1,
+  "ML_bounds_solar": [
+    0.05,
+    2.0
+  ],
+  "distance_prior": "Gaussian in D/Dcat centered 1 with sigma eD/D; truncated to [max(0.1,1-3sigma),1+3sigma]",
+  "inclination_prior": "Gaussian degrees centered catalog i with sigma catalog e_i, truncated to [max(1,i-3e_i),min(90,i+3e_i)]",
+  "ML_prior": "Gaussian in log10 ML centered log10(0.5/0.7), sigma 0.1 dex; MAP density defined in these log coordinates",
+  "prior_justification": "Li+2018 use lognormal stellar ML scatter 0.1 dex and catalog geometry errors. Here tails are explicitly bounded engineering/sensitivity policy; not identical posterior inference. No cosmological halo prior.",
+  "geometry_frame": "Project physical model into catalog deprojected velocity frame: sin(i_new)/sin(i_catalog). Observed velocities and quoted errors unchanged.",
+  "identity_rtol": 1e-09,
+  "asymptotic_rtol": 2e-06,
+  "synthetic_log_parameter_atol": 1e-05,
+  "reproducibility_rtol": 1e-10,
+  "reproducibility_atol": 1e-10,
+  "covariance_warning_condition": 100000000.0,
+  "profile_subset": [
+    "NGC3198",
+    "DDO154"
+  ],
+  "profile_offsets_dex": [
+    -0.2,
+    -0.1,
+    0,
+    0.1,
+    0.2
+  ],
+  "profile_type": "F0 NFW log10 M200 fixed grid, refit log10 c; truncated grid, no interval endpoints implied",
+  "domain_policy": "No silent radius exclusions. F0 unsupported model records invalid indices; comparability only on identical successful masks. F1 invalid-domain proposals rejected/recorded; if a feasible prior box cannot be evaluated, fit reports failure.",
+  "preflight_MiB": 768,
+  "system_floor_MiB": 512,
+  "hard_child_peak_MiB": 180,
+  "target_MiB": 250,
+  "single_BLAS_thread": true,
+  "numerical_tolerance_rationale": "Keep Gate0 identity/limit tolerances; synthetic noiseless known-model log parameters must recover within 1e-5 dex; reruns 1e-10. Values frozen before M1 scientific execution."
+}

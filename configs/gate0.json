@@ -1,0 +1,14 @@
+{
+  "stage": "Gate 0 ingestion pilot",
+  "selected_galaxies": ["NGC3198", "NGC2403", "NGC3741", "DDO154", "NGC2841"],
+  "upsilon_disk": 0.5,
+  "upsilon_bulge": 0.7,
+  "distance_tolerance_Mpc": 0.010000001,
+  "distance_tolerance_reason": "Two independently rounded distances reported to 0.01 Mpc can differ by up to 0.01 Mpc.",
+  "independent_signed_force_absolute_tolerance_km2_s2": 1e-9,
+  "minimum_available_memory_before_scientific_imports_MiB": 1024,
+  "memory_policy_reason": "Reserve at least 1 GiB available before importing the fitting/plotting stack on a system already near physical-memory exhaustion. This is a conservative local execution rule, not a measured package requirement.",
+  "physics_identity_relative_tolerance": 1e-9,
+  "clean_process_relative_tolerance": 1e-10,
+  "no_silent_exclusions": true
+}

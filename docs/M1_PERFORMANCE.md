@@ -1,0 +1,9 @@
+# M1 performance and operational safety
+
+CPU only, one BLAS thread and one controlled scientific process at a time. Unchanged Gate 0R monitor uses five native Windows available-memory samples over two seconds, all >=768 MiB, range <=128 MiB, then 50 ms execution polling, 512 MiB sampled system floor and 180 MiB child peak cap. This is stricter than M1's 250 MiB target; no policy threshold was loosened. Available RAM at initial M1 inspection was about 1,612 MiB. Native preflight logs are exact execution evidence, not the inspection estimate.
+
+Peak scientific fitting process 72.363 MiB; maximum across successful monitored tasks including tests/plotting 146.734 MiB. Lowest monitored headroom across successful and archived development runs 1580.863 MiB. Initial eight-galaxy comparison workers took 14.378 seconds combined, including imports/profiles where present; this excludes reruns, tests, preflight, plots and report generation. Plot worker resource: 12.233 seconds, 146.180 MiB. Per-worker CPU, baseline/peak working set and wall time saved. Monitor timings include process startup; do not equate them to a full-catalog benchmark.
+
+One DDO154 launch was correctly refused because available memory rose ~208 MiB during preflight, exceeding the stability-range rule despite plenty of headroom. No child launched. A single later bounded preflight succeeded without threshold changes. Refusal retained as DDO154_initial_preflight_refused.json. One earlier syntax-error launch and one failing-test run are separately retained; no safety floor/cap was breached. No user process killed, paging setting changed or external service launched.
+
+Peak working set is Windows' lifetime resident working-set high-water mark; current RSS and sampled headroom are also logged. Polling cannot guarantee unsampled system minima; it is an operational safeguard. The process stops on any observed violation. Exact 175-galaxy runtime/memory remains unmeasured and M2 unstarted.

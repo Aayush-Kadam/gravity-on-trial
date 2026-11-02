@@ -1,0 +1,11 @@
+# M4 scientific UI contract
+
+OBSERVED means original SPARC catalog-frame radius, velocity and published velocity error. VALIDATED RESULT means a saved M2/M3 benchmark record with exact source identity. INTERACTIVE PREVIEW means an explicitly requested new engine evaluation, not a fitted inference. EXPLORATORY FIT is a bounded new optimization, stored separately and never promoted into the benchmark.
+
+Gas remains signed: its force term is Vgas |Vgas|; stellar terms are Υ V². Component charts are signed equivalent speeds, not independently measured total circular velocities. Negative or nonfinite squared totals are rejected without clipping or removing radii. Distance and inclination previews use the existing physical transformation and project predictions into the unchanged catalog frame; displayed observation arrays and errors do not change.
+
+Remove dark matter removes only the reference halo term, holding its stellar M/L and geometry fixed. It does not refit. Unsupported baryonic totals are explicitly rejected. Restore clears galaxy-specific preview/removal/fit state. Neither action proves or disproves dark matter.
+
+MLE uses normalized Gaussian likelihood, the original full mask and the frozen four-model decision. AIC/AICc/BIC are withheld when undefined; all MAP information criteria are withheld. Hiding a curve does not change the four-way winner. Eligibility excludes failed/unsupported results, mismatched masks, boundary contacts, rank deficiency and frozen ill-conditioning failures. Gap <2 is inconclusive. Convergence is not adequacy; strong parameter correlation and boundary warnings remain visible.
+
+Atlas headline counts 79/18/5/5 apply only to 107 decisive M2 baselines. The complete population is 79/18/29/49 over 175. Persistence/flip fractions retain their valid and meaningful denominators; null, invalid, failed, unsupported and unavailable comparisons remain explicit. Scenario spans are not confidence intervals, grid frequencies are not theory probabilities, and overlapping named scenarios are not independent samples. Quality cuts change composition, not individual labels. MAP prior experiments and paired data χ² are never presented as evidence rankings.

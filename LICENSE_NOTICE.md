@@ -1,0 +1,3 @@
+# R0R license and distribution boundary
+
+Original code: Apache-2.0, explicitly owner approved. See LICENSE and NOTICE. Third-party dependencies and SPARC content are not relicensed. The source-only release excludes raw observations, parsed catalogs, generated per-galaxy data-bearing records, observational figures/screenshots and astronomical imagery. Users acquire official sources and generate their evidence locally. The sole proposed screenshot is original first-run UI without observations. Historical R0/M4 pending-readiness notes are superseded by the R0R audit; no public publication is yet authorized.

@@ -1,0 +1,9 @@
+# Gate 0 scientific method
+
+Fixed stellar M/L 0.5 disk / 0.7 bulge, signed gas Vgas*abs(Vgas). No point cuts. Catalog distances and inclinations fixed. Velocity residual=(sqrt(Vbar²+Vhalo²)−Vobs)/eVobs; independent Gaussian likelihood assumption, no prior penalty, two halo parameters. Baryons-only has zero fitted parameters and its residuals/chi-squared are in published_table_crosscheck.json.
+
+NFW parameters: log10 M200 [solar masses], log10 concentration; R200=(G M200/(100 H0²))^(1/3), G=4.30091e-6 kpc (km/s)²/Msun, H0=73 km/s/Mpc=0.073 km/s/kpc. Burkert parameters: log10 central density [Msun/kpc³], log10 core radius [kpc]. Exact bounds and four starts in configs/gate0r.json. These are freely fitted halos without concentration–mass priors. Positive radii required; negative total squared speed raises an explicit error, never clamped. All selected radii have nonnegative baryonic squared speed. Small-radius series avoid cancellation. Density quadrature and separately derived critical-density conversion provide independent controls; the constants remain explicit physical assumptions.
+
+Log-parameter bounded SciPy least_squares uses x_scale=jac, ftol/xtol/gtol=1e-11, max_nfev=2000. All starts retained; best chi-squared selected. Boundary fraction 1e-5; numerical Jacobian condition number recorded. No calibrated confidence intervals, evidence probabilities or AIC/BIC rankings are produced at Gate 0. Large chi-squared values are retained. The exact same data mask and unchanged errors apply to all three models.
+
+Tolerance and resource policy were frozen before scientific fits in configs/gate0r.json. Fresh-process comparison rel_tol=1e-10, abs_tol=1e-12; observed outputs match exactly. Native memory monitor checks every 50 ms and terminates only its own controlled child if memory criteria fail.

@@ -1,0 +1,16 @@
+data/raw/
+results/
+release/
+work/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.streamlit/secrets.toml
+.env
+.env.*
+*.log
+*.pyc
+*.exe
+.bootstrap/
+bootstrap_identity.json

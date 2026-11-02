@@ -1,0 +1,11 @@
+# R0R strict clean-room reproduction
+
+The definitive test extracted r0r_source_bootstrap_test_v4.zip, verified its source bytes and began with no raw data or result files. A fresh .venv excluded system site packages and installed the complete declared lock, including the existing plotting toolchain. It did not copy any original generated benchmark into the clean room. PYTHONPATH was cleared during setup and browser launch. Modules resolve project-relative paths; only an external auditor accessed the original project after generation for comparison.
+
+The full documented bootstrap acquired official bytes and computed every required M2/M3 record. Presentation-only error-handling/test changes were verified separately; tested_source_agreement.json checks final runtime/scientific/config/lock bytes against the clean-room files. Documentation/publication metadata are finalized afterward without changing fit definitions. Source/algorithm identity is separate from variable environment/timing metadata.
+
+Real Edge/Playwright workflows passed all four modules, NGC3198 and other real galaxies, all model toggles, halo removal/restore, displayed-array/residual checks, unavailable CamB comparison, identifiability warnings, stable/sensitive/inconclusive/unassessable examples, invalid/unsupported/failed scenarios, genuine CSV/JSON downloads and repeated navigation. Evidence Vault also exposed the regenerated receipt and scientific figures. Original browser helpers were corrected to measure owned process-tree RSS in virtual environments.
+
+Actual Windows Start-Gravity.ps1 launch and stop/restart succeeded. Post-restart displayed observed/model arrays matched the newly generated records. External browser origins were blocked during core navigation/export tests and restart; no physical network-adapter shutdown is claimed. Internet remains necessary for first dependency/source acquisition. First-run missing-data/offline UI also passed in a separate empty-source fixture.
+
+Browser first render 3.391s; ordinary galaxy switch 1.236s; application process-tree peak 167.785 MiB. Test servers were stopped afterward. Screenshots and raw local logs are retained privately in results/r0r/v1/. Only the actual setup-only screenshot, containing no observational data, is proposed as a public screenshot. No fictional images were created.

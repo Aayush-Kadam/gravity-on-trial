@@ -1,0 +1,9 @@
+# R0R public release contents and rights
+
+Versioned source candidate: release/r0r_v1/. Proposed source ZIP: release/r0r_source_candidate_v1.zip. The prior R0 review directory, archive and manifest remain unchanged. Exact files/bytes/SHA-256/category inventory is results/r0r/v1/publication_manifest.json and the in-package PUBLICATION_MANIFEST.json. The manifest cannot self-hash; archive inventory explicitly includes it.
+
+Include: original rights-cleared source under Apache-2.0; unchanged scientific functions/configurations; bootstrap and process-monitor helper; current setup/error-aware app; scientific/bootstrap tests; locked dependencies; source-data URL/checksum references; third-party notices; methodological/history/R0R documentation; Windows startup script; actual data-free first-run screenshot. Preserve SPARC and original-observation citations.
+
+Exclude: official raw tables/archives, normalized catalogs, all per-galaxy generated/cached benchmark arrays, generated observational plots and data-bearing screenshots, astronomical/source imagery, .bootstrap build trees, results/, environments, caches, compiled executables, secrets, browser profiles/downloads and local audit logs/private paths. Users acquire required official sources directly and derive their local evidence. Apache-2.0 does not apply to SPARC data or third-party assets. No redistribution grant is invented and no data owners were contacted.
+
+Dependency version lookup returned no OSV matches for the 53 locked runtime/test packages at verification time. This is database matching, not an exploit/security guarantee. License notices for the plotting additions are retained. The application stays localhost-only/single-user; no public-hosting security claim. A credential/private-key/user-home-path pattern scan and exact file inventory check run on the final proposed package. No remote repository, push, deployment or external file distribution is authorized or performed.

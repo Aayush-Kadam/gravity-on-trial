@@ -1,0 +1,9 @@
+# M4 application architecture
+
+Local Python 3.12 / Streamlit 1.63 / Plotly 6.3.1 application. `streamlit_app.py` owns navigation; four scripts in app_pages/ call the presentation functions in m4_ui.py. The versioned m4_adapter_v1 layer reads M2/M3 records, with per-file SHA-256 cache keys and frozen-manifest admission. st.cache_data returns session-safe serialized copies, bounded to twelve scientific entries and two manifests. No shared mutable array resource cache and no catalog fit on navigation.
+
+m4_charts.py draws observations with published error bars, full-radius model curves and standardized model-minus-observed residuals. Lists are passed without numerical rounding. m4_adapter.preview calls unchanged M1 physics and checks its source hashes. No halo/RAR implementation exists in a UI callback. Immutable saved benchmark predictions remain authoritative.
+
+m4_fit.py is an explicit optional serial exploratory process using M3 fit_fixed, with unchanged M1/Gate0R scientific configurations. Files go only into results/m4/v1/exploratory. Admission requires five memory samples, each >=1024 MiB, range <=128 MiB; active limits are 20 seconds, 180 MiB child peak and >=768 MiB available system memory. An exclusive lock prevents concurrent live fits. The app supervisor has a distinct M4 engineering envelope: app peak <=600 MiB and system available >=768 MiB. It binds only 127.0.0.1; telemetry is disabled. Monitor history is a bounded rolling window, with lifetime extrema retained. No GPU, Docker, WSL, MCMC, LLM, external API or background fitting.
+
+Evidence exports serialize the displayed real arrays, original benchmark record, full scenario record or provenance. The original scientific package and M1–M3 results are untouched. No public deployment or push was performed.

@@ -1,0 +1,21 @@
+{
+  "schema": "r0r-source-contract-v1",
+  "files": {
+    "m3_worker.py": "9c0e5f2cf18a43f580d205cfd93efd8b18a3b02a389dd1a98154617cd89212d8",
+    "m3_science.py": "e19d986cf84055fe602268d77bf6ecaa50d8c3ecc77a9a046f8d9a692abbb006",
+    "m3_metrics.py": "d54eb1cae72b365f83b560a39b3379d60dee0e48f050409ab3a6f744bda64ab2",
+    "m2_worker.py": "11783f65cce725b5156f4da3d40f7f34411810006ef21feb7f68483598ca16ee",
+    "m2_compare.py": "0291cfb47a3ffa2cfc358968c1c5acd40732b5244f5c705340bc4c0252eb25a1",
+    "m1_worker.py": "0a963e6491de3fe9149b84e4fd67a74c6686857f052520aedb52c1dbb00e444a",
+    "configs\\m3_v1.json": "b8f4f888d2156a9a75e66c94ca355ea72422c001259dfd83bf4e2e4bf43de9ba",
+    "configs\\m2_v1.json": "117665c1b2204925b5eaae2c81ce960ddfed4e4223d974c8bc39dafb7db009b8",
+    "configs\\m1_v1.json": "3a40a0fa753ce54326d5f5e905c9e6ddb0f038f8e16254413c89417a2719e98a",
+    "configs\\gate0r.json": "98c03cd67f8b3cb94c331bad9c442f50b2e58737cac95b6a87b60f5c6516ab8c",
+    "src\\gravity_on_trial\\__init__.py": "ed2378643d77aef61dc070f8a635692eb30b614db421154cf64cccaca25b86a2",
+    "src\\gravity_on_trial\\gate0_ingestion.py": "46a6ee01af6f2b370dbc46b34cb8034d78fe966493e2eff001e5e67d8a216f8c",
+    "src\\gravity_on_trial\\halos.py": "c74adb53cf857521459bc0295b67f555db45b5958dace66b10462389e419bac1",
+    "src\\gravity_on_trial\\m1_inference.py": "e0626e9d41a6bb9df43a514d5a22719b10f037ad2dee2bde0a10b0ddbd340f80",
+    "src\\gravity_on_trial\\m1_physics.py": "87939953b4fa0a9a5386957fa7bb517a2bff487438d3916ac91ba8757bfa0983"
+  },
+  "protected_M3_revision": "88d20d31b743733b779db7bba82fa34a8f13871b80280a0c54a43ccd226917b1"
+}

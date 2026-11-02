@@ -1,0 +1,20 @@
+[server]
+address = "127.0.0.1"
+headless = true
+fileWatcherType = "none"
+[browser]
+gatherUsageStats = false
+[theme]
+base = "dark"
+primaryColor = "#82c6ff"
+backgroundColor = "#0f172a"
+secondaryBackgroundColor = "#1e293b"
+textColor = "#f1f5f9"
+linkColor = "#82c6ff"
+borderColor = "#40516a"
+showWidgetBorder = true
+showSidebarBorder = true
+baseRadius = "6px"
+font = "sans-serif"
+baseFontSize = 15
+headingFontSizes = ["34px", "26px", "21px", "18px", "16px", "14px"]

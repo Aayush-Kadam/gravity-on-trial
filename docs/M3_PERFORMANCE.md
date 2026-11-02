@@ -1,0 +1,9 @@
+# M3 performance and safety
+
+Single serial scientific child, single BLAS thread, CPU only. Unchanged native Windows preflight: five samples over two seconds, >=768 MiB available and range<=128 MiB; active sampling every 50 ms, >=512 MiB system floor and <=180 MiB child lifetime peak. No browser/dashboard, GPU framework, Docker/WSL, MCMC, unrelated process termination or paging changes.
+
+Pilot workers 35.497 seconds, 81.340 MiB peak. Projected full worker time 310.599 seconds was below the frozen 900-second budget before full authorization. Actual initial full worker time 572.158 seconds; independent sweep 567.679 seconds. Initial active dispatcher segments 664.343 seconds; repeat 660.673 seconds. Dispatcher timings include preflights/startup and interrupted active segments, but exclude manual investigation pauses. Total conversational/development duration is not inferred from these numbers.
+
+Core peak 82.449 MiB; overall monitored peak 140.383 MiB; lowest observed execution headroom 1516.363 MiB. All launched recorded tasks respected safety limits. Two preflights refused launch because available RAM varied 135 and 249 MiB over their windows despite >1.5 GiB headroom. Logs retained; one later bounded window per interruption passed unchanged criteria. No unsafe child launched and no threshold was loosened. Stable preflight does not guarantee unsampled system minima; full monitoring histories are retained.
+
+Atomic per-galaxy/scenario checkpoints and content-checked dispatcher reuse preserved progress. Runtime, current RSS and worker high-water marks are recorded at appropriate scopes; process_lifetime_peak_so_far is not falsely described as an isolated per-fit peak. Figures were rendered separately from fitting and measured independently. No M4/UI performance or unbounded campaign feasibility claim is made.

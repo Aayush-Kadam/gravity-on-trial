@@ -1,0 +1,26 @@
+[
+  {
+    "accepted": true,
+    "attempt_utc": "2026-11-02T16:47:51.956487+00:00",
+    "bytes": 28259,
+    "retrieval": "existing frozen local file",
+    "sha256": "5aa0501f6b0d881fa579030e315e7b5b6ef561a5bd3a07472f9929c7e5728243",
+    "url": "https://astroweb.case.edu/SPARC/SPARC_Lelli2016c.mrt"
+  },
+  {
+    "accepted": true,
+    "attempt_utc": "2026-11-02T16:47:51.957496+00:00",
+    "bytes": 269518,
+    "retrieval": "existing frozen local file",
+    "sha256": "9108994b12cc401b94a1768beca61c53ec354779385c9c9cc571049f3043244c",
+    "url": "https://astroweb.case.edu/SPARC/MassModels_Lelli2016c.mrt"
+  },
+  {
+    "accepted": true,
+    "attempt_utc": "2026-11-02T16:47:51.958487+00:00",
+    "bytes": 110737,
+    "retrieval": "existing frozen local file",
+    "sha256": "0a80cc90714828cc28b7dd57923576714d209f2490328c087c4a4ad607faf588",
+    "url": "https://astroweb.case.edu/SPARC/Rotmod_LTG.zip"
+  }
+]

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gravity-on-trial"
+version = "0.1.0"
+description = "Local rotation-curve laboratory; public data bootstrap pending"
+requires-python = ">=3.12"
+dependencies = ["numpy==2.2.1", "scipy==1.18.1", "psutil==7.0.0"]
+
+[project.optional-dependencies]
+validation = ["pytest==9.2.0", "matplotlib==3.11.1", "Pillow>=10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
