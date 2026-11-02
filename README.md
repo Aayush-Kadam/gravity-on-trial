@@ -10,10 +10,10 @@ Use Python 3.12 (64-bit). Extract this source package into a new directory. From
 
 ```powershell
 python -m venv .venv
-..venvScriptspython.exe -m pip install -r requirements-r0-lock.txt
-..venvScriptspython.exe benchmark_setup.py bootstrap --from-official-sources
-..venvScriptspython.exe benchmark_setup.py verify
-.Start-Gravity.ps1
+.\.venv\Scripts\python.exe -m pip install -r requirements-r0-lock.txt
+.\.venv\Scripts\python.exe benchmark_setup.py bootstrap --from-official-sources
+.\.venv\Scripts\python.exe benchmark_setup.py verify
+.\Start-Gravity.ps1
 ```
 
 Open http://127.0.0.1:8507. The startup script uses .venv automatically. No GPU, Docker or WSL. Initial setup requires internet and serial CPU work; budget roughly 10–20 minutes on an ordinary laptop, with exact measured scopes in docs/R0R_RUNTIME_AND_MEMORY.md. Current versions/Windows/Python 3.12 are the validated environment, not a cross-platform guarantee.
@@ -39,8 +39,8 @@ The 107 decisive baselines classify as 79 stable, 18 sensitive, 5 inconclusive a
 
 ```powershell
 $env:PYTHONPATH = (Resolve-Path src).Path
-..venvScriptspython.exe -m pytest tests m3_tests.py m4_tests.py -q
-..venvScriptspython.exe m4_check.py
+.\.venv\Scripts\python.exe -m pytest tests m3_tests.py m4_tests.py -q
+.\.venv\Scripts\python.exe m4_check.py
 ```
 
 119 tests passed. The strict clean-room regenerated all M2/M3 slots; every converged parameter/prediction array exactly matched the protected reference. Actual browser tests passed all modules, exports, restart, offline-origin blocking and failure controls. Source/data hashes, checkpointed owned-process memory limits and exact provenance are inspectable. These are software/numerical validation, not theory-truth guarantees. See docs/R0R_FINAL_GO_NO_GO.md for acceptance evidence and remaining scope limits.
